@@ -16,6 +16,8 @@ body {
 }
 
 h1 {
-  font-family: SDVBold;
+  font-family: Brush Script MT;
   text-align: center;
+  color: transparent;
+  background-image: url("img/texting.gif")
 }
