@@ -3,12 +3,6 @@
    "how to change link color." */
 
 
-  @font-face {
-    font-family: SDVBold;
-    src: url("/fonts/svbold.otf");
-  }
-
-
 body {
   background-color: white;
   color: black;
