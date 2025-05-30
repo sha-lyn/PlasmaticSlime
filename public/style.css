@@ -18,5 +18,6 @@ body {
 h1 {
   font-family: Brush Script MT;
   text-align: center;
+  color: transparent;
   background-image: url("img/textbg.gif")
 }
