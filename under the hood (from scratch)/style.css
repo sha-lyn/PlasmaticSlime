@@ -1,0 +1,43 @@
+/* style.css */
+
+/* unused colors:
+rgb(158, 129, 139) (Mountbatten Pink, a muted lavendar-rose-ish), complementary to body bg color: rgb(97, 126, 116) (Hooker's Green, a muted green-ish)
+
+*/
+
+body {
+    background-color:#F7FFF7;
+    color: #6a2e35;
+    font-family: sans-serif;
+}
+
+.navbar {
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #617E74;
+    color: #0A210F;
+}
+
+/* archive.html Slime's Log Notebook Styles */
+
+.notebook {
+
+}
+
+.weblog {
+
+}
+
+.hobbylog {
+
+}
+
+.stationary {
+    
+}
+
+.SDVCalc {
+
+}
