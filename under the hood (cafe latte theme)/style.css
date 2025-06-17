@@ -3,12 +3,12 @@
 
     /* CSS' light-dark() function allows you to set different colours for light and dark mode respectively */
     /* Recommended reading: https://css-tricks.com/come-to-the-light-dark-side/ */
-    --color-body-background: #B58048;
-    --color-content-background: light-dark(#E8D2B9, #3E000E);
-    --color-body-text: light-dark(#1e0006, #F4F3F8);
-    --color-title: #F4F3F8;
-    --color-heading: light-dark(#785630, #E8D2B9);
-    --color-link: light-dark(#6a4826, #d6b18d);
+    --color-body-background: light-dark(hsl(119, 19.4%, 75%), hsl(119, 19.4%, 25%));
+    --color-content-background: light-dark(hsl(299, 19.4%, 90%), hsl(299, 19.4%, 25%));
+    --color-body-text: light-dark(hsl(348, 100%, 10%), hsl(252, 25%, 95%));
+    --color-title: hsl(299, 19.4%, 42%);
+    --color-heading: light-dark(hsl(299, 19.4%, 42%), hsl(299, 19.4%, 90%));
+    --color-link: light-dark(hsl(119, 19.4%, 40%), hsl(119, 19.4%, 80%));
 
     --font-family-main: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
     --font-family-headings: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
@@ -16,7 +16,7 @@
     --content-max-width: 800px;
     --border-main: 3px solid var(--color-body-text);
     --border-radius-main: 10px;
-    --shadow-main: 4px 4px 0 #3E000E;
+    --shadow-main: 1px 1px hsl(348, 100%, 10%);
 }
 
 /* General styling */
@@ -45,7 +45,7 @@ a {
     color: var(--color-link);
 }
 
-input, button, textarea, select {
+input, textarea, select {
     max-width: 100%;
     border: 0.12em solid var(--color-body-text);
     background-color: var(--color-content-background);
@@ -57,6 +57,26 @@ input, button, textarea, select {
 :focus {
     outline: 0.15em solid var(--color-link);
 }
+
+/* Project Buttons (div class="projects") */
+
+.projects {
+
+    background-color: var(--color-body-background);
+    padding: 8px 15px;
+    border: var(--border-main);
+    border-radius: var(--border-radius-main);
+
+}
+
+.projects h5, .projects a {
+    text-align: center;
+    color: hsl(299, 19.4%, 42.4%);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 
 /* Layout container */
 .container {
@@ -77,7 +97,7 @@ input, button, textarea, select {
 }
 
 .header__title {
-    font-size: 2.8em;
+    font-size: 4em;
     color: var(--color-title);
     text-shadow: var(--shadow-main);
 }
@@ -96,19 +116,22 @@ input, button, textarea, select {
     gap: 0.7em;
 }
 
-.navbar__links li {
+.navbar__links a {
     background-color: var(--color-content-background);
+    color: var(--color-title);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
     padding: 8px 15px;
     border: var(--border-main);
     border-radius: var(--border-radius-main);
-    font-size: 1.15em;
-    font-weight: bold;
     box-shadow: var(--shadow-main);
 }
 
 .navbar__links li a:focus {
     outline-offset: 0.2em;
 }
+
 
 /* Main content */
 main {
@@ -122,6 +145,7 @@ main {
 
 .main__title {
     border-bottom: var(--border-main);
+    font-size: 2.5em;
 }
 
 main * + * {
