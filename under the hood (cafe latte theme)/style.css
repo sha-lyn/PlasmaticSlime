@@ -14,7 +14,7 @@
     --content-max-width: 800px;
     --border-main: 3px solid var(--color-body-text);
     --border-radius-main: 10px;
-    --shadow-main: 1px 1px hsl(348, 100%, 10%);
+    --shadow-main: 2px 2px 4px rgba(54,69,79,0.4);
 }
 
 /* General styling */
@@ -61,7 +61,6 @@ input, textarea, select {
 /* Project Buttons (div class="projects") */
 
 .projects {
-
     background-color: var(--color-body-background);
     padding: 8px 15px;
     border: var(--border-main);
@@ -71,12 +70,21 @@ input, textarea, select {
 
 .projects h5, .projects a {
     text-align: center;
+    max-width: 100%;
     color: hsl(299, 19.4%, 42.4%);
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 25px;
     font-weight: bold;
 }
 
+/* Inner Boxes (div class="inner__boxbox") */
+
+.inner__box {
+    font-size-adjust: inherit;
+    padding: 8px 15px;
+    border: var(--border-main);
+    border-radius: var(--border-radius-main);
+}
 
 /* Layout container */
 .container {
@@ -169,6 +177,10 @@ main * + * {
 }
 footer * + * {
     margin-block-start: 0.5em;
+}
+
+footer p {
+  font-size: 20px;
 }
 
 /* Skip to content button */
