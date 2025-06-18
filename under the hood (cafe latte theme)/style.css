@@ -1,17 +1,16 @@
 :root {
     color-scheme: light dark;
 
-    /* CSS' light-dark() function allows you to set different colours for light and dark mode respectively */
-    /* Recommended reading: https://css-tricks.com/come-to-the-light-dark-side/ */
-    --color-body-background: light-dark(hsl(119, 19.4%, 75%), hsl(119, 19.4%, 25%));
-    --color-content-background: light-dark(hsl(299, 19.4%, 90%), hsl(299, 19.4%, 25%));
-    --color-body-text: light-dark(hsl(348, 100%, 10%), hsl(252, 25%, 95%));
-    --color-title: hsl(299, 19.4%, 42%);
-    --color-heading: light-dark(hsl(299, 19.4%, 42%), hsl(299, 19.4%, 90%));
-    --color-link: light-dark(hsl(119, 19.4%, 40%), hsl(119, 19.4%, 80%));
+    --color-body-background: light-dark(hsl(119, 19.4%, 75%), hsl(119, 19.4%, 15%));
+    --color-content-background: light-dark(hsl(299, 19.4%, 90%), hsl(299, 19.4%, 15%));
+    --color-body-text: light-dark(hsl(348, 100%, 10%), hsl(252, 25%, 85%));
+    --color-title: hsl(299, 19.4%, 52%);
+    --color-heading: light-dark(hsl(299, 19.4%, 42%), hsl(299, 19.4%, 80%));
+    --color-link: light-dark(hsl(119, 19.4%, 40%), hsl(119, 19.4%, 70%));
 
-    --font-family-main: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
-    --font-family-headings: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    --font-family-main: Arial, Helvetica, sans-serif;
+    --font-family-headings: Georgia, 'Times New Roman', serif;
+}
 
     --content-max-width: 800px;
     --border-main: 3px solid var(--color-body-text);
