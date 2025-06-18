@@ -135,8 +135,6 @@ input, textarea, select {
 
 /* Main content */
 main {
-    display: flex;
-    flex-wrap: wrap;
     background-color: var(--color-content-background);
     font-size: 1.2em;
     margin: 20px 0;
