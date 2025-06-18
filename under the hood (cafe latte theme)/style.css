@@ -11,7 +11,6 @@
     --font-family-main: Arial, Helvetica, sans-serif;
     --font-family-headings: Georgia, 'Times New Roman', serif;
 
-
     --content-max-width: 800px;
     --border-main: 3px solid var(--color-body-text);
     --border-radius-main: 10px;
@@ -135,7 +134,7 @@ input, textarea, select {
 
 
 /* Main content */
-.box {
+main {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--color-content-background);
@@ -148,6 +147,11 @@ input, textarea, select {
 }
 
 .main__title {
+    border-bottom: var(--border-main);
+    font-size: 2.5em;
+}
+
+.section__header {
     border-bottom: var(--border-main);
     font-size: 2.5em;
 }
