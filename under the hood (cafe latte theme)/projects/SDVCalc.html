@@ -4,40 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Plasmatic Slime's Stardew Valley Crop Calculator">
-    <title>Stardew Valley Crop Calculator</title>
+    <title>Plasmatic Slime's Stardew Valley Crop Calculator</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Stardew Valley Crop Calculator</h1>
-        
-  <form id="crop-form">
-    <h2>Farmer Level</h2>
-    <br>
-    <br>
+  <div class="skip-btn"><a href="#content">Skip to content</a></div>
+        <div class="container">
+            <header class="header">
+                <img class="header__img" src="plasmaticslime.svg" alt="plasmatic slime logo">
+                <h2 class="header__title">Plasmatic Slime's Radioactive Rambling</h2>
+            </header>
+            <nav class="navbar">
+                <ul class="navbar__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="links.html">Links</a></li>
+                </ul>
+            </nav>
             
-    <h2>Season</h2>
+    <h1 id="sdvcalc-title">Stardew Valley Crop Calculator<h1>
+    <p id="disclaimer"><b>Disclaimer: </b>This calculator is still a work in progress and is currently not functional.</p>
+    <br>
+    <form id="crop-form">
+        <fieldset>
+          <legend id="sdv-legend">What is your Farming skill level?</legend><input type="range" id="lvl" name="lvl" min="1" max="10" value="1" oninput="this.nextElementSibling.value = this.value">
+          <output>1</output>
+        </fieldset>
+      <br>
+            
       <fieldset>
-        <legend>What season are you choosing crops your from?</legend>
-        <label for="spring">Spring <input type="checkbox" name="season" value="spring" id="spring"/></label>
-        <label for="summer">Summer <input type="checkbox" name="season" value="summer" id="summer"/></label>
-        <label for="fall">Fall <input type="checkbox" name="season" value="sall" id="fall"/></label>
-        <label for="winter">Winter <input type="checkbox" name="season" value="sinter" id="winter"/></label>
+        <legend id="sdv-legend">What season are you choosing crops from?</legend>
+        <div class="radio-align">
+          <label for="season">Spring <input type="radio" name="season" value="spring" id="spring" checked/></label>
+          <label for="season">Summer <input type="radio" name="season" value="summer" id="summer"/></label>
+          <label for="season">Fall <input type="radio" name="season" value="fall" id="fall"/></label>
+          <label for="season">Winter <input type="radio" name="season" value="winter" id="winter"/></label>
+        </div>
       </fieldset>
         <br>
-        <br>
             
-      <h2>Profession</h2>
       <fieldset>
+        <legend id="sdv-legend">Do you have either of these Professions?</legend>
         <label><input type="checkbox" name="tiller" id="tiller" value="tiller"> Tiller (+10% to crop value)</label>
         <br>
         <label><input type="checkbox" name="artisan" id="tiller" value="tiller"> Artisan (+40% to artisan goods)</label>
       </fieldset>
         <br>
-        <br>
 
-      <h2>Crop Info</h2>
       <fieldset>
-        <legend>Choose your crop and type in the seed count you will be using.</legend>
+        <legend id="sdv-legend">Choose your crop and type in the seed count you will be using.</legend>
         <div class="crop-row">
           <select class="crop-select" name="crop-select" id="crop-select-1" value="crop-select-1" required>
           <option value="">— pick a crop —</option></select>
@@ -180,7 +196,6 @@
       </fieldset>
 
         <br>
-        <br>
 
         <button type="reset">Clear Form</button>
         <br>
@@ -189,7 +204,12 @@
       </form>
 
       <div name="result" style="margin-top: 5rem; font-weight: bold;"></div>
-
+    </div>
+            <footer class="footer">
+                <p>Template <a href="https:32bit.cafe/spring25/mochalatte.html">Cafe Latte,</a> originally by <a href="https://leilukin.com/">Leilukin</a></p> 
+                <p>Edited with love by Plasma ☣️🦠</p>
+                <p><a href="#top">↑ Back to Top ↑</a></p>
+            </footer>
     <script src="SDVCalc.js"></script>
 </body>
 </html>
