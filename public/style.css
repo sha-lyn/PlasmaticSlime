@@ -110,7 +110,11 @@ input, textarea, select {
 }
 
 .header__img {
-    height: 2em;
+    max-width: 25%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .header__title {
