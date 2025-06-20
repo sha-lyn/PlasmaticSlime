@@ -136,20 +136,20 @@ input, textarea, select {
 .navbar__links {
     list-style-type: "";
     align-content: 100%;
-    display: inline-flex;
-    width: 100%;
-    justify-content: center;
     gap: 0.7em;
 }
 
 .navbar__links a {
     background-color: var(--color-content-background);
     color: var(--color-title);
+    display: inline-block;
     text-decoration: none;
     font-size: 1.5em;
     font-weight: bold;
     padding: 8px 15px;
     margin: auto;
+    width: 100%;
+    height: auto;
     border: var(--border-main);
     border-radius: var(--border-radius-main);
     box-shadow: var(--shadow-main);
