@@ -8,13 +8,30 @@
     --color-heading: light-dark(hsl(299, 19.4%, 42%), hsl(299, 19.4%, 80%));
     --color-link: light-dark(hsl(119, 19.4%, 40%), hsl(119, 19.4%, 70%));
 
-    --font-family-main: 'Atkinson Hyperlegible', 'Helvetica', sans-serif;
-    --font-family-headings: 'Georgia', 'Times New Roman', serif;
+    --font-family-main: 'Hyperlegible Mono', 'Helvetica', sans-serif;
+    --font-family-headings: 'Hyperlegible Next', 'Georgia', 'Times New Roman', serif;
+    --font-family-sdv: 'svbold', 'Atkinson Hyperlegible', 'Georgia', serif
 
     --content-max-width: 800px;
     --border-main: 3px solid var(--color-body-text);
     --border-radius-main: 10px;
     --shadow-main: 2px 2px 4px rgba(54,69,79,0.4);
+}
+
+/* Fonts */
+@font-face {
+    font-family: sdvbold;
+    src: url("fonts/svbold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Hyperlegible Next;
+    src: url("fonts/AHNext.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Hyperlegible Mono;
+    src: url("fonts/AHMono.otf") format("opentype");
 }
 
 /* General styling */
@@ -229,6 +246,7 @@ footer p {
 /* Letter Formatting */
 
 #sdvcalc-title {
+    font-family: var(--font-family-sdv);
     color: var(--color-title);;
     background-color: var(--color-content-background);
     padding: 8px 15px;
