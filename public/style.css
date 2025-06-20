@@ -133,7 +133,6 @@ input, textarea, select {
     width: 100%;
     height: auto;
     margin: 5px;
-    padding: 8px 15px;
 }
 
 .navbar__links {
@@ -148,6 +147,7 @@ input, textarea, select {
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
+    padding: 8px 15px;
     margin: 5px;
     width: 100%;
     height: auto;
