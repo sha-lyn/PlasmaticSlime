@@ -135,9 +135,10 @@ input, textarea, select {
 
 .navbar__links {
     list-style-type: "";
-    padding: 0;
+    padding: 10%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 0.7em;
 }
 
