@@ -178,7 +178,7 @@ main * + * {
 
 /* Footer */
 .footer {
-    font-size: 0.5em;
+    font-size: 12px;
     text-size-adjust: auto;
     text-align: center;
     background-color: var(--color-content-background);
@@ -202,7 +202,7 @@ footer * + * {
     overflow: hidden;
     transition: top 0.5s ease;
     background: var(--color-content-background);
-    font-size: 0.5em;
+    font-size: 12px;
     font-weight: 700;
     z-index: 1000;
     padding: 5px 10px;
