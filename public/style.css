@@ -138,6 +138,7 @@ input, textarea, select {
 .navbar__links {
     list-style-type: "";
     gap: 0.7em;
+    padding: 0;
 }
 
 .navbar__links a {
