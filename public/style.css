@@ -148,7 +148,7 @@ input, textarea, select {
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
-    padding: 8px 15px;
+    padding: 8px;
     width: 100%;
     height: auto;
     border: var(--border-main);
