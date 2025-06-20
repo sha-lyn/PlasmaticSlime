@@ -97,7 +97,8 @@ input, textarea, select {
 }
 
 .header__title {
-    font-size: 4em;
+    font-size: 3em;
+    padding: 5px;
     color: var(--color-title);
     text-shadow: var(--shadow-main);
 }
