@@ -130,7 +130,6 @@ input, textarea, select {
 /* Navigation bar */
 .navbar {
     display: grid;
-    place-content: center;
 }
 
 .navbar__links {
@@ -141,8 +140,8 @@ input, textarea, select {
 .navbar__links a {
     background-color: var(--color-content-background);
     color: var(--color-title);
-    display: block;
     text-decoration: none;
+    text-align: center;
     font-size: 1.5em;
     font-weight: bold;
     padding: 8px 15px;
