@@ -144,6 +144,7 @@ input, textarea, select {
     color: var(--color-title);
     display: inline-block;
     text-decoration: none;
+    text-align: center;
     font-size: 1.5em;
     font-weight: bold;
     padding: 8px 15px;
