@@ -153,7 +153,6 @@ input, textarea, select {
     border: var(--border-main);
     border-radius: var(--border-radius-main);
     box-shadow: var(--shadow-main);
-    border-width: 100%;
 }
 
 .navbar__links li a:focus {
