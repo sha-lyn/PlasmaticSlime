@@ -132,6 +132,7 @@ input, textarea, select {
     display: inline-grid;
     width: 100%;
     height: auto;
+    padding: 5px;
 }
 
 .navbar__links {
