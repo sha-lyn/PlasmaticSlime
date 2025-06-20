@@ -124,6 +124,7 @@ input, textarea, select {
     padding: 5px;
     color: var(--color-title);
     text-shadow: var(--shadow-main);
+    line-height: 100%;
 }
 
 /* Navigation bar */
