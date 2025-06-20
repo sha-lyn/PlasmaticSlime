@@ -8,14 +8,28 @@
     --color-heading: light-dark(hsl(299, 19.4%, 42%), hsl(299, 19.4%, 80%));
     --color-link: light-dark(hsl(119, 19.4%, 40%), hsl(119, 19.4%, 70%));
 
-    --font-family-main: Arial, Helvetica, sans-serif;
-    --font-family-headings: Georgia, 'Times New Roman', serif;
+    --font-family-main: 'AHMono', Arial, Helvetica, sans-serif;
+    --font-family-headings: 'AHNext' Georgia, 'Times New Roman', serif;
 
     --content-max-width: 800px;
     --border-main: 3px solid var(--color-body-text);
     --border-radius-main: 10px;
     --shadow-main: 1px 1px hsl(348, 100%, 10%);
 }
+
+@font-face {
+    font-family: 'AHMono',
+    src: url('fonts/AHMono.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'AHNext',
+    src: url('fonts/AHNext.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'svbold',
+    src: url('fonts/svbold.otf') format('otf');
 
 /* General styling */
 *, *::before, *::after {
