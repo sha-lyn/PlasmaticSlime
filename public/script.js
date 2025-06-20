@@ -1,7 +1,4 @@
-function showTime() {
-	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+
+function openInNewTab(url) {
+  window.open(url, '_blank').focus();
 }
-showTime();
-setInterval(function () {
-	showTime();
-}, 1000);

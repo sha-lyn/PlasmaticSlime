@@ -60,6 +60,8 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     color: var(--color-link);
+    target-name: new;
+    target-new: tab;
 }
 
 input, textarea, select {
