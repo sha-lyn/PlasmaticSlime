@@ -73,6 +73,10 @@ input, textarea, select {
     padding-right: 5px;
 }
 
+hr {
+    border-bottom: var(--border-main);
+}
+
 :focus {
     outline: 0.15em solid var(--color-link);
 }
